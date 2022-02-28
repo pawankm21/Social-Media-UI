@@ -1,5 +1,4 @@
 {
-  "homepage": "https://pawankm21.github.io/Social-media-UI/",
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -22,8 +21,6 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "predeploy": "craco  build",
-    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
