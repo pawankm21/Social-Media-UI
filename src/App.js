@@ -15,11 +15,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/landing" element={<Landing />} />
-      </Routes>
-
-      <Routes>
-        <Route path="/" element={isLoggedIn ? <Feed /> : <Landing />} />
+        <Route exact path="/" element={<Landing />} />
+        {/* <Route path="/" element={isLoggedIn ? <Feed /> : <Landing />} /> */}
         <Route path="/personal" element={<Personal />} />
         <Route path="/settings" element={<Settings />} />
         <Route exact path="/auth" element={<Auth />} />
