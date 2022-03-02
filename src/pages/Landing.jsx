@@ -1,4 +1,4 @@
-/* This example requires Tailwind CSS v2.0+ */
+
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
@@ -11,10 +11,13 @@ import { ReactComponent as SecureIcon } from "../assets/secure.svg";
 import background from "../assets/background.png";
 import Toggle from "../components/Toggle";
 const navigation = [
-  { name: "Features", href: "#features" },
-  { name: "Github", href: "" },
-  { name: "Marketplace", href: "#" },
+  { name: "Feed", href: "/feed" },
+  { name: "GitHub", href: "#" },
+  { name: "Personal", href: "/personal" },
   { name: "Team", href: "#" },
+  { name: "Maintain", href: "/maintain" },
+  { name: "Settings", href: "#" },
+  
 ];
 
 
@@ -35,7 +38,7 @@ export default function Landing() {
                     <a href="/">
                       <img
                         className="h-8 w-auto sm:h-10"
-                        src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
+                        src="https://upload.wikimedia.org/wikipedia/commons/0/05/Ethereum_logo_2014.svg"
                         alt="logo"
                       />
                     </a>
@@ -64,7 +67,7 @@ export default function Landing() {
                   >
                     Log in
                   </a>
-                 <Toggle/>
+                  <Toggle />
                 </div>
               </nav>
             </div>
@@ -86,14 +89,16 @@ export default function Landing() {
                   <div className="px-5 pt-4 flex items-center justify-between">
                     <div>
                       <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
-                        alt=""
+                        className="h-8 w-auto sm:h-10"
+                        src="https://upload.wikimedia.org/wikipedia/commons/0/05/Ethereum_logo_2014.svg"
+                        alt="logo"
                       />
                     </div>
                     <div className="-mr-2">
-                      <Popover.Button className="dark:bg-blue-500 rounded-md p-2 inline-flex items-center justify-center
-                      bg-white dark:text-gray-100 dark:hover:text-yellow-400 dark:hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset dark:focus:ring-blue-500 ">
+                      <Popover.Button
+                        className="dark:bg-blue-500 rounded-md p-2 inline-flex items-center justify-center
+                      bg-white dark:text-gray-100 dark:hover:text-yellow-400 dark:hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset dark:focus:ring-blue-500 "
+                      >
                         <span className="sr-only">Close main menu</span>
                         <XIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -177,8 +182,10 @@ export default function Landing() {
             </h1>
             <div className="lg:flex rounded-lg">
               <div className="lg:w-1/2 p-8 self-center hidden lg:block ">
-                <BlocksIcon className="w-48 h-48 m-auto dark:text-yellow-400
-                text-blue-900 fill-current font-bold" />
+                <BlocksIcon
+                  className="w-48 h-48 m-auto dark:text-yellow-400
+                text-blue-900 fill-current font-bold"
+                />
               </div>
               <div className="lg:w-1/2 m-auto p-8 dark:bg-blue-900 text-gray-700 dark:text-white bg-white rounded-lg shadow ">
                 <BlocksIcon className="lg:hidden w-24 h-24 m-auto dark:text-yellow-400 text-blue-900 fill-current font-bold" />
@@ -259,10 +266,6 @@ export default function Landing() {
                 Lorem ipsum dolor sit amet consectetur
               </h1>
               <div className="grid grid-flow-col mt-12 w-full justify-around">
-                {/* <UserGroupIcon className="w-6 text-white" />
-                <UserGroupIcon className="w-6 text-white" />
-                <UserGroupIcon className="w-6 text-white" />
-                <UserGroupIcon className="w-6 text-white" /> */}
               </div>
             </div>
           </div>
@@ -270,22 +273,34 @@ export default function Landing() {
           <div className="flex flex-col  w-full">
             <div className="grid grid-flow-col relative text-white lg:text-xl  top-24 p-4">
               <p>
-                <a href="https://google.com" className="hover:no-underline underline ">
+                <a
+                  href="https://google.com"
+                  className="hover:no-underline underline "
+                >
                   lorem
                 </a>
               </p>{" "}
               <p>
-                <a href="https://google.com" className="hover:no-underline underline ">
+                <a
+                  href="https://google.com"
+                  className="hover:no-underline underline "
+                >
                   lorem
                 </a>
               </p>{" "}
               <p>
-                <a href="https://google.com" className="hover:no-underline underline ">
+                <a
+                  href="https://google.com"
+                  className="hover:no-underline underline "
+                >
                   lorem
                 </a>
               </p>{" "}
               <p>
-                <a href="https://google.com" className="hover:no-underline underline ">
+                <a
+                  href="https://google.com"
+                  className="hover:no-underline underline "
+                >
                   lorem
                 </a>
               </p>

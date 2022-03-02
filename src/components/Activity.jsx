@@ -38,7 +38,9 @@ const notifs = [
         
 
 ]
-function Activity() {
+
+
+function Activity(props) {
     return (
         <div className="pt-0 border-2 ">
             {notifs.map((notif, idx) => {

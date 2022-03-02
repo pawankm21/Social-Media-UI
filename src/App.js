@@ -16,7 +16,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<Landing />} />
-        {/* <Route path="/" element={isLoggedIn ? <Feed /> : <Landing />} /> */}
+        <Route path="/feed" element={ <Feed /> } /> 
         <Route path="/personal" element={<Personal />} />
         <Route path="/settings" element={<Settings />} />
         <Route exact path="/auth" element={<Auth />} />

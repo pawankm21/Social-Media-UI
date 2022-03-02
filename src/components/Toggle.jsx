@@ -3,7 +3,7 @@ import { Switch } from "@headlessui/react";
 import useDark from "../hooks/useDark";
 
 export default function Toggle() {
-  const [dark, setDark] = useDark(false);
+  const [dark, setDark] = useDark(true);
 
   return (
     <Switch
