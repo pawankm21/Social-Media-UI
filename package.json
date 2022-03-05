@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": false,
+  "homepage": "https://naughty-hermann-ac7fb5.netlify.app/",
   "dependencies": {
     "@craco/craco": "^6.4.0",
     "@headlessui/react": "^1.4.2",
